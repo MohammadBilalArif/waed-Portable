@@ -1,0 +1,25 @@
+development:
+      host: localhost
+      adapter: mysql
+      database: fedena
+      port: 3306
+      username: root
+      password: admin123
+
+test: &test
+      host: localhost
+      adapter: mysql
+      database: fedena
+      port: 3306
+      username: root
+      password: admin123
+
+production:
+      host: localhost
+      adapter: mysql
+      database: fedena
+      port: 3306
+      username: root
+      password: admin123
+cucumber:
+  <<: *test
